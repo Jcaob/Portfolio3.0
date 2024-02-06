@@ -1,0 +1,74 @@
+.projects-title {
+  font-family: AlbertLight;
+  font-size: 60px;
+  color: #ffffff;
+  margin-left: 50px;
+}
+
+.display-projects {
+  background-color: #181818;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .item-card-con {
+    display: flex;
+
+    .item-card {
+      margin-top: 50px;
+      margin-left: 200px;
+      display: flex;
+      flex-direction: column;
+      height: 400px;
+
+      width: 20%;
+
+      .item-img {
+        height: 500px;
+        width: 100%;
+        background-color: blue;
+      }
+      .submit {
+        height: 45px;
+        width: 170px;
+        background-color: #db2c2c;
+        border-radius: 25px;
+        border: none;
+        color: white;
+        transition: 0.5s;
+        cursor: pointer;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        font-family: AlbertLight;
+        text-decoration: none;
+      }
+
+      .submit:hover {
+        width: 200px;
+        transition: 0.5s;
+        background-color: #9b2121;
+      }
+
+      .item-name {
+        margin-top: 5px;
+        height: 50px;
+        color: #ffffff;
+        font-family: AlbertLight;
+        font-size: 30px;
+        width: 100%;
+      }
+
+      .item-price {
+        margin-top: 10px;
+        height: 30px;
+        font-family: AlbertLight;
+        color: #ffffff;
+        width: 100%;
+      }
+    }
+  }
+}

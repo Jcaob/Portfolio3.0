@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <bo>
+    <nav>
+      <div class="brand">
+        <h1 id="name"><span>J</span>ACOB.</h1>
+      </div>
+      <div class="links">
+        <a href="#" id="home">HOME</a>
+        <a href="#" id="about">ABOUT</a>
+        <a href="#" id="product">PROJECTS</a>
+        <a href="#" id="contact">CONTACT</a>
+      </div>
+    </nav>
+
+    <div class="home-hero">
+      <h1 id="home-hero-text">Jacob Catalan</h1>
+      <p id="home-hero-para">Full Stack Developer</p>
+    </div>
+
+    <section class="about">
+      <div class="about-img"><img src="./assets/images/New.jpg" /></div>
+
+      <div class="about-des">
+        <h1 class="about-title">About Me</h1>
+        <p>
+          Hello! I am a recent graduate of Indiana University, Luddy School of Informatics, Computing, and
+            Engineering I recently completed the schools full stack path i have two degrees, A Bachelor of Science in Informatics, and A Bachelor of Media Arts and Science (Specialization: Web Development) i am a hard working individual and i like to spend my free time playing DND and exercising.
+        </p>
+        <div class="about-links">
+          <h1 class="about-link" onclick="openTab(event, 'Skills')">Skills</h1>
+          <h1 class="about-link" onclick="openTab(event, 'Experiance')">
+            Experiance
+          </h1>
+          <h1 class="about-link" onclick="openTab(event, 'Education')">
+            Education
+          </h1>
+        </div>
+        <div id="Skills" class="tabcontent">
+          <h3>Languages:</h3>
+          <p>HTML, JavaScript, CSS, PHP, Python, SQL</p>
+          <h3>Platforms::</h3>
+          <p>Microsoft Windows, Mac-OS, VSCode</p>
+          <h3>Databases:</h3>
+          <p>MySQL, Google Firebase</p>
+          <h3>FrameWorks:</h3>
+          <p>React.js, P5.js, Angular.js, jQuery</p>
+        </div>
+
+        <div id="Experiance" class="tabcontent">
+          <h3>Fall 2023 - December 2023</h3>
+          <p>Web Developer Intern - BestLogic Staffing</p>
+          <h3>Spring 2023 - Summer 2023</h3>
+          <p>Web Developer Contractor - Black Heritage Preservation Program,</p>
+        </div>
+
+        <div id="Education" class="tabcontent">
+          <h3>December 2023</h3>
+          <p>
+            Bachelor of Media Arts and Science (Specialization: Web Development)
+            from Indiana University, Luddy School of Informatics, Computing, and
+            Engineering
+          </p>
+          <h3>December 2023</h3>
+          <p>
+            Bachelor of Science in Informatics from Indiana University, Luddy
+            School of Informatics, Computing, and Engineering
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="display-projects">
+      <h1 class="projects-title">My Work</h1>
+      <div class="item-card-con">
+        <div class="item-card">
+          <img src="./assets/images/Social.PNG" class="item-img" />
+          <p class="item-name">Social Media App</p>
+          <p class="item-price">
+            Built With React, TailwindCSS, and Google Firebase
+          </p>
+          <a href=""><button class="submit">Learn more</button></a>
+        </div>
+        <div class="item-card">
+          <img src="./assets/images/Indiana Ave.PNG" class="item-img" />
+          <p class="item-name">Indiana Landmarks</p>
+          <p class="item-price">
+            Built with PHP, HTML, JavaScript, CSS, SCSS, MySQL Database
+          </p>
+          <a href="https://jcaob.github.io/IndianaLandmarks/"><button class="submit">Learn more</button></a>
+        </div>
+        <div class="item-card">
+          <img src="./assets/images/JC.PNG" class="item-img" />
+          <p class="item-name">JungleCook</p>
+          <p class="item-price">
+            Build with JavaScript, HTML, CSS, JQuery, SCSS
+          </p>
+          <a href="https://jcaob.github.io/JC/dist/"><button class="submit">Learn more</button></a>
+        </div>
+      </div>
+    </section>
+   
+
+    <footer>
+      <div class="footer-col">
+        <p class="footer-head">Message</p>
+        <p class="footer-des1">
+          We are a local organization that provides support within the local
+          community to organizations that involve volunteers.
+        </p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-head">Get in touch</p>
+        <p class="footer-des">(317)-494-0459</p>
+        <p class="footer-des">JacobCatalan943@gmail.com</p>
+        <p></p>
+      </div>
+
+      <div class="footer-col">
+        <p class="footer-head">Follow me!</p>
+        <p class="footer-des">LinkedIN</p>
+      </div>
+    </footer>
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script src="app/app.js"></script>
+  </body>
+</html>

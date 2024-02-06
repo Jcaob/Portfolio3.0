@@ -1,0 +1,29 @@
+footer {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #181818;
+
+  .footer-col {
+    display: flex;
+    flex-direction: column;
+
+    .footer-head {
+      font-family: Albertbold;
+      color: #db2c2c;
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+    .footer-des {
+      font-family: AlbertLight;
+
+      color: #ffffff;
+    }
+    .footer-des1 {
+      font-family: AlbertLight;
+      width: 400px;
+      color: #ffffff;
+    }
+  }
+}

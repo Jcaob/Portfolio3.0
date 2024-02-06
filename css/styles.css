@@ -1,0 +1,399 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #181818;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  background-color: #181818;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  margin-right: 40px;
+  font-family: Albertnorm;
+}
+
+a:hover {
+  color: #ffffff;
+  transition: 0.2s;
+  border-bottom: solid 1px #181818;
+}
+
+h1 {
+  text-transform: capitalize;
+}
+
+.brand {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 60px;
+  align-items: center;
+}
+.brand .logo {
+  height: 40px;
+  width: 40px;
+  background-color: red;
+}
+.brand #name {
+  font-family: Albertbold;
+  color: #ffffff;
+  font-size: 30px;
+}
+.brand #name span {
+  color: #db2c2c;
+  font-size: 40px;
+}
+
+@font-face {
+  font-family: Albertnorm;
+  src: url(../assets/fonts/Albert_Sans/static/AlbertSans-Medium.ttf);
+}
+@font-face {
+  font-family: Albertbold;
+  src: url(../assets/fonts/Albert_Sans/static/AlbertSans-Bold.ttf);
+}
+@font-face {
+  font-family: Albertboldlight;
+  src: url(../assets/fonts/Albert_Sans/static/AlbertSans-SemiBold.ttf);
+}
+@font-face {
+  font-family: AlbertLight;
+  src: url(../assets/fonts/Albert_Sans/static/AlbertSans-Regular.ttf);
+}
+.home-hero {
+  width: 100%;
+  height: 800px;
+  background-color: #181818;
+  text-align: left;
+}
+.home-hero #home-hero-text {
+  font-size: 150px;
+  font-family: Albertboldlight;
+  letter-spacing: -6px;
+  position: relative;
+  color: #db2c2c;
+  top: 150px;
+  transition: 0.5s;
+}
+.home-hero #home-hero-para {
+  font-size: 60px;
+  font-family: Albertboldlight;
+  letter-spacing: 0px;
+  position: relative;
+  color: #db2c2c;
+  top: 100px;
+  left: 20px;
+  transition: 0.5s;
+}
+.home-hero #home-hero-text:hover {
+  font-size: 160px;
+  transition: 0.5s;
+}
+
+.display {
+  background-color: #181818;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.questions {
+  width: 100%;
+  margin-bottom: 50px;
+  background-color: #181818;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.questions .q-head {
+  color: #ffffff;
+  font-family: AlbertLight;
+}
+.questions .q-des {
+  color: #ffffff;
+  margin-top: 20px;
+  font-family: AlbertLight;
+  text-align: center;
+  width: 600px;
+}
+.questions .question-holder {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.questions .question-holder .question-col {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.questions .question-holder .question-col .question {
+  margin-top: 20px;
+  width: 75%;
+  background-color: #2c2c2c;
+  width: 400px;
+}
+.questions .question-holder .question-col .question .question-name {
+  margin: 20px;
+  font-family: AlbertLight;
+  color: #ffffff;
+  font-size: 30px;
+}
+.questions .question-holder .question-col .question .question-answer {
+  margin: 20px;
+  font-family: AlbertLight;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+footer {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #181818;
+}
+footer .footer-col {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-col .footer-head {
+  font-family: Albertbold;
+  color: #db2c2c;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+footer .footer-col .footer-des {
+  font-family: AlbertLight;
+  color: #ffffff;
+}
+footer .footer-col .footer-des1 {
+  font-family: AlbertLight;
+  width: 400px;
+  color: #ffffff;
+}
+
+.about {
+  display: flex;
+  background-color: #181818;
+  justify-content: space-evenly;
+  height: 800px;
+  width: 100%;
+}
+.about .about-img {
+  background-color: red;
+  height: 500px;
+  width: 300px;
+}
+.about .about-img img {
+  height: 600px;
+  width: 350px;
+}
+.about .about-des {
+  color: #ffffff;
+  font-family: AlbertLight;
+  font-size: 20px;
+  width: 40%;
+}
+.about .about-des .about-title {
+  font-size: 60px;
+}
+.about .about-des .about-links {
+  display: flex;
+}
+.about .about-des .about-links .about-link {
+  margin-right: 20px;
+  font-size: 20px;
+  transition: 0.5s;
+}
+.about .about-des .about-links .about-link:hover {
+  font-size: 25px;
+  transition: 0.5s;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+.tabcontent h3 {
+  color: #db2c2c;
+}
+
+.projects-title {
+  font-family: AlbertLight;
+  font-size: 60px;
+  color: #ffffff;
+  margin-left: 50px;
+}
+
+.display-projects {
+  background-color: #181818;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.display-projects .item-card-con {
+  display: flex;
+}
+.display-projects .item-card-con .item-card {
+  margin-top: 50px;
+  margin-left: 200px;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 20%;
+}
+.display-projects .item-card-con .item-card .item-img {
+  height: 500px;
+  width: 100%;
+  background-color: blue;
+}
+.display-projects .item-card-con .item-card .submit {
+  height: 45px;
+  width: 170px;
+  background-color: #db2c2c;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-family: AlbertLight;
+  text-decoration: none;
+}
+.display-projects .item-card-con .item-card .submit:hover {
+  width: 200px;
+  transition: 0.5s;
+  background-color: #9b2121;
+}
+.display-projects .item-card-con .item-card .item-name {
+  margin-top: 5px;
+  height: 50px;
+  color: #ffffff;
+  font-family: AlbertLight;
+  font-size: 30px;
+  width: 100%;
+}
+.display-projects .item-card-con .item-card .item-price {
+  margin-top: 10px;
+  height: 30px;
+  font-family: AlbertLight;
+  color: #ffffff;
+  width: 100%;
+}
+
+.contact {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #181818;
+}
+.contact .contact-img {
+  height: 400px;
+  width: 600px;
+}
+.contact .contact-input {
+  height: 60px;
+  width: 529px;
+  padding: 10px;
+  outline: none;
+  box-sizing: border-box;
+  margin-top: 30px;
+}
+.contact .contact-input2 {
+  height: 199px;
+  width: 529px;
+  padding: 10px;
+  outline: none;
+  box-sizing: border-box;
+  margin-top: 30px;
+}
+.contact .contact-input2::placeholder {
+  position: absolute;
+  bottom: 160px;
+}
+.contact .contact-button {
+  width: 167px;
+  height: 60px;
+  background-color: #00d084;
+  margin-top: 20px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #181818;
+  font-family: AlbertLight;
+  border-radius: 10px;
+}
+.contact .contact-button:active {
+  background-color: #048f5c;
+  transition: 0.5s;
+}
+.contact .contact-des {
+  margin-top: 10px;
+  color: #ffffff;
+  font-family: Albertbold;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=styles.css.map */
